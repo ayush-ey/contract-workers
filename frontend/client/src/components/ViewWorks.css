@@ -1,0 +1,84 @@
+/* ViewWorks.css */
+.view-works-container {
+  max-width: 1200px;
+  margin: 2em auto;
+  padding: 2em;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.view-works-title {
+  text-align: center;
+  margin-bottom: 1em;
+  color: #333;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.filters input {
+  padding: 0.75em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  flex: 1 1 200px;
+}
+
+.download-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+.download-buttons button {
+  padding: 0.75em 1.5em;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.download-buttons button:hover {
+  background-color: #ff6347;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.works-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1em;
+}
+
+.works-table th,
+.works-table td {
+  padding: 1em;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.works-table th {
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.works-table td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.works-table td:nth-child(7) {
+  /* Ensuring 'Item of Work' column is very wide */
+  min-width: 400px;
+}
